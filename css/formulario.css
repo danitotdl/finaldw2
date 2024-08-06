@@ -1,0 +1,160 @@
+/*-------------Estilo para formulario-----------*/
+
+.body-formulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../img/fondo24.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: red;
+}
+
+.wrapper{
+  width: 420px;
+  background: transparent;
+  backdrop-filter: blur(30px);
+  color: #fff;
+  border-radius: 8px;
+  padding: 30px 40px;
+  position: relative;
+}
+
+.wrapper h2{
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;    
+  margin: 30px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+  color: #fff;
+}
+
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px;
+}
+
+.wrapper .forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: 15px 0 15px;
+}
+
+.forgot label input{
+  accent-color: #fff;
+  margin-right: 3px;    
+}
+
+.forgot a{
+  color: #fff;
+  text-decoration: none;    
+}
+
+.forgot a:hover{
+  text-decoration: underline;
+}
+
+.wrapper .btn-form{
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+}
+
+.wrapper .registrarse{
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 10px 0 10px;
+}
+
+.registrarse p a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.registrarse p a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width:576px){
+  .wrapper{
+    width: 210px;          
+  }
+  .wrapper h2{
+    font-size: 1em;
+  }
+
+  .wrapper .input-box{
+    height: 25px;
+  }
+
+  .wrapper .forgot{
+    font-size: 0.7em;
+  }
+
+  .input-box input{
+    padding: 10px 25px 10px 10px;
+  }
+
+  .input-box i{
+    font-size: 1em;
+    right: 10px;
+    top: 20%;
+    
+  }
+
+  .wrapper .btn-form{
+    height: 25%;
+    font-size: 1em;
+  }
+
+  .wrapper .registrarse{
+    font-size: 0.7em;
+  }
+
+}

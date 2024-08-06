@@ -1,0 +1,82 @@
+/*-------Estilo para Header y barra de navegación-------*/
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 1rem 6rem;
+    z-index: 2;
+  }
+  
+  .logo{
+    position: absolute;
+    top: 7%;
+    left: 7%; 
+    transform: translate(-50% -50%);
+  }
+  
+  .logo img{
+    width: 100px;  
+  }
+  
+  nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav li a{
+    position: relative;
+    color: var(--text-color);
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  nav li a::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: width 0.3s ease;
+  }
+  
+  nav li a:hover::before{
+    width: 100%;
+  }
+  
+  .btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80px;
+    width: 80px;
+    background-color: transparent;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .btn i{
+    font-size: 1.5rem;
+    transition: scale .2s ease;  
+  }
+  
+  .btn:hover i{
+    scale: 1.1;
+  }
+  
+  .menu{
+    display: none;
+  }

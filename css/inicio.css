@@ -1,0 +1,118 @@
+/*----Estilo para section en index.html---*/
+
+.section-inicio{
+    min-height: 90vh;
+    width: 100%;
+    background: transparent;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: start;  
+  }
+  
+  .section-inicio .info{
+    text-align: center;
+  }
+  
+  .section-inicio h1{
+    font-size: 5rem;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    ;
+    opacity: 0.8;
+    padding: 0 1rem;
+  }
+  
+  .section-inicio button{
+    margin: 1rem;
+    padding: 1rem;
+    width: 160px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s ease;    
+  }
+  
+  .section-inicio button:hover{
+    scale: 1.05;
+  }
+  
+  @media screen and (max-width: 768px){
+    nav{
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 100%;
+      height: 0px;
+      background-color: var(--primary-color);
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      z-index: 1;
+      overflow: hidden;      
+    }
+  
+    .logo img{
+      width: 70px;
+    }
+  
+    nav ul{
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;    
+    }
+  
+    nav li a{
+      font-size: 1.2rem;
+    }
+  
+    .menu{
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+  
+    .menu span{
+      width: 30px;
+      height: 2px;
+      background-color: var(--text-color);
+      transform-origin: left;
+      transition: 0.5s ease;
+    }
+  
+    .menu input{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      cursor: pointer;
+      appearance: none;
+    }
+  
+    .menu input:checked ~ .linea2{
+      opacity: 0;
+    }
+  
+    .menu input:checked ~ .linea1{
+      transform: rotate(45deg);
+    }
+  
+    .menu input:checked ~ .linea3{
+      transform: rotate(-45deg);
+    }
+  
+    header:has(input:checked) > nav {
+      height: calc(100vh - 80px);
+    }
+  
+    .section-inicio h1{
+      font-size: 3rem;
+    }
+  }
